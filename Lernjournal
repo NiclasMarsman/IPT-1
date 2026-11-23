@@ -1,0 +1,319 @@
+
+ICT-Courses
+
+LS1:
+
+Link zu Skratch: https://scratch.mit.edu/projects/editor/?tutorial=getStarted
+
+Begriffskarte:
+Objekt: Ein Gegenstand oder ein Element
+Attribut: Eine Eigenschaft eines Elements
+Ereignis: Etwas was passiert was eine aktion auslösen kann. Z.B. ein Mausklick.
+Verhalten: Was ein Objekt kann. Z.B. Laufen fahren usw.
+Variable: Ein benannter Speicherplatz für einen Wert.
+
+Vorwissen:
+Was ist ein Programm?
+Anweisungen die ein Computer ausführt.
+
+Was ist ein Bug?
+Ein Fehler in einem Programm.
+
+Wie würdest du systematisch herausfinden, warum etwas nicht funktioniert?
+Zuerst die Fehlermeldung genau Lesen und dann Prüfen wo sich der Fehler befinden könnte.
+
+Exit-Ticket LS1
+1. Ich weis nun wie man auf Scratch ein Spiel programmiert.
+2. -
+3. Ich nehme mit wie ich einen Fehler erkennen und beheben kann.
+
+----------------------------------------------------------------------------------------------------------
+
+LS2:
+
+1. Unterschied Git und GitHub:
+Git verwaltet Änderungen hingegen GitHub Projekte online Speichert.
+
+Für mich ist der git commit sehr sicher und ich weis wie er funktioniert und ich ihn anwenden kann.
+Git: 
+Versionskontrollprogramm
+Läuft auf lokalem Computer
+Funktioniert auch ohne Internett
+
+GitHub:
+Eine Webseite/Plattform für Git-Projekte
+Läuft online in der Cloud
+Braucht Internett
+
+
+Exit-Ticket LS2
+1.	Git-Befehl: git commit
+Wirkung: Speichert den aktuellen Stand bzw. die Änderungen als neuen Versionspunkt im Git-Verlauf. 
+2.	Begriff aus dem GitHub-Flow: Pull Request
+Bedeutung: Eine Anfrage, eigene Änderungen in einen anderen Branch, meistens main, zu übernehmen. 
+3.	Offene Frage:
+Was ist genau der Unterschied zwischen git add, git commit und git push? 
+
+-----------------------------------------------------------------------------------------------------------
+LS3
+-
+-----------------------------------------------------------------------------------------------------------
+LS4
+
+Praxisfall:
+Problem: In der Mensa wird der gesamt Preis von Hand berechnet. Dabei können immer wieder Fehler passieren.
+Betroffene Personen: Die Kunden und die Mitarbeiter.
+Zielzustand: Der Gesamtpreis soll korrekt berechnet werden.
+Lösungsidee: Ein einfaches Programm auf einem Smartphone oder Tablet das den Gesamtpreis berechnet
+
+
+Zuordung Problem, Ziel und Lösung
+
+Beim manuellen Berechnen entstehen Fehler.  = Problem / Wenn ein Fehler ensteht dann ist es ein Problem, das man beheben kann.
+Der Gesamtpreis eines Einkaufs soll zuverlässig bestimmt werden. = Ziel 
+Wir programmieren eine C#-Konsolenanwendung.  = Lösung
+Einzelpreis und Menge müssen berücksichtigt werden.  = Anforderung / Es ist eine Anforderung, da man erwartet das alles berücksichtigt wird.
+Der Einkauf soll schneller abgewickelt werden können.  = Ziel
+Das Programm verwendet Console.ReadLine().  = Lösung
+Der berechnete Gesamtpreis wird angezeigt. = Ziel / Es ist ein Ziel. Das Ziel ist es, das alles korrekt angezeigt wird.
+
+
+Anforderung auf Prüfbarkeit testen.
+
+Aussage: 
+Das Programm soll einfach sein.
+Verhalten:
+Das Programm ist einfach und Praktisch aufgebaut. Es fragt nach Artikel, Preis und Menge.
+Prüfkriterium:
+Nach den Eingaben soll das Ergebniss angezeigt werden.
+
+Aussage:
+Die Berechnung muss funktionieren.
+Verhalten:
+Das Programm berechnet Preis x Menge.
+Prüfkriterium:
+Wenn man zum Beispiel 3 Brötchen für je 2 Franken eintippt soll am ende das Resultat 6 sein.
+
+
+Eingabe, Verarbeitung und Ausgabe verbinden
+
+Eingabe: Artikelname, Einzelpreis und Menge.
+Verarbeitung: Gesamtpreis berechnen: Einzelpreis x Menge.
+Ausgaben: Den Gesamtpreis anzeigen.
+
+
+Den Auftrag fachlich schärfen
+
+Problemstatement:
+Beim Berechnen der Preise von Hand entstehen Fehler, besonders bei mehreren Artikeln gleichzeitig.
+Zielbild:
+Der Gesamtpreis wird richtig berechnet, alles wird verständlich angezeigt.
+
+Anforderung:
+1. Das Programm fragt nach Artikelname, Einzelpreis und Menge.
+2. Das Programm berechnet Einzelpreis x Menge.
+3. Das Programm zeigt eine Zusammenfassung an.
+
+Akzeptanz
+1. Artikel: Wasser, Einzelpreis: 2, Menge: 3. können nacheinander eingegebne werden.
+2. Bei 2 Franken und 3 Stück berechnet das Programm 6 Franken
+3. Die Ausgabe zeigt: 3x Wasser = 6 Franken
+
+Prüfen:
+Die Anforderungen passen zum Problem und zum Ziel.
+
+
+Den Lösungsweg modellieren und durchspielen
+
+Ablauf:
+1. Artikelname eingeben.
+2. Einzelpreis eingeben
+3. Menge eingeben.
+4. Gesamtpreis berechnen: Einzelpreis x Menge.
+5. Artikelname, Menge und Gesamtpreis anzeigen.
+
+
+Artikelname eingeben: 1. Wasser, 2. Sandwich.
+Einzelpreis eingeben: 2 Franken, 5 Franken.
+Menge eingeben: 3 Stück, 2 Stück
+Gesamtpreis berechnen: 2x3, 5x2
+Zwischenergebnis: 6.- , 10.-
+Artikelname, Menge und Gesamtpreis anzeigen: 
+3x Wasser = 6 Franken, 2x Sandwich = 10 Franken
+
+
+Fremdtest:
+-
+
+----------------------------------------------------------------------------------------------------------
+
+LS5
+
+Mensa Programm Codeieren in VS code
+
+1. Zuerst habe ich eienne text eingefügt.
+Console.WriteLine("Name des Produkts:");
+
+2. Danach habe ich eine Eingabe hinzugefügt und diese als name gespeichert. 
+string name = Console.ReadLine();
+
+3. Dies habe ich mit der Menge wiederholt.
+Console.WriteLine("Wie viel(e) " + name + " willst du kaufen?");
+string amountText = Console.ReadLine();
+
+4. Um den Text in eine Zahl umzuwandeln habe ich folgenden Befehl eingefügt.
+int amount = int.Parse(amountText);
+
+5. Dann habe ich das Vorgehen wiederholt mit dem Preis.
+Console.WriteLine("Wie teuer sind / ist ein(e) " + name + "?");
+string priceText = Console.ReadLine();  
+double price = double.Parse(priceText);
+
+6. Am Schluss rechnet es alles zusammen.
+double completePrice = amount * price ;
+completePrice = Math.Round(completePrice , 2);
+
+7. Und gibt das Endresultat unten in der Console aus.
+Console.WriteLine( amount + " " + name + "    
+
+
+Mini Programm:
+while (true){
+
+Console.WriteLine("Gib mir 2 Zahlen die ich zusammenrechnen soll.");
+Console.WriteLine("erste Zahl:") ;
+string zahl1 = Console.ReadLine();
+
+Console.WriteLine("zweite Zahl:");
+string zahl2 = Console.ReadLine();
+
+double zahl1Double = double.Parse(zahl1);
+double zahl2Double = double.Parse(zahl2);
+
+double sum = zahl1Double + zahl2Double;
+
+double result = Math.Round(sum, 2);
+
+Console.WriteLine("Die Summe ist: " + result);
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------
+
+LS6
+
+LS5 Programm:
+Unser bisheriges Programm liest den Artikelnamen, den Einzelpreis und die Menge.
+Danach berechnet es den Gesamtpreis, indem es den Einzelpreis mit der Menge multipliziert.
+
+LS6-Programm:
+Im LS6 soll das Programm zusätzlich einen Mengnrabatt berechnen. Je nachdem, wie viele Artikel gekauft werden.
+Wir Verwenden if, else if und else.
+
+Self-Check
+Der Einzelpreis beträgt 2.50 Fr.
+Menge    Rabatt     Zwischenbetrag     Rabattbetrag     Endsumme
+___________________________________________________________________
+0        Fehler  |       -          |        -       | Fehlermeldung
+___________________________________________________________________
+1          0%    |      2.50        |       0.00     |    2.50
+___________________________________________________________________
+2          0%    |      5.00        |       0.00     |    5.00
+___________________________________________________________________
+3          10%   |      7.50        |       0.75     |    6.75
+___________________________________________________________________
+4          10%   |      10.00       |       1.00     |    9.00
+___________________________________________________________________
+5          20%   |      12.50       |       2.50     |    10.00
+___________________________________________________________________
+6          20%   |      15.00       |       3.00     |    12.00
+
+PAP- Zeichen:
+
+
+
+
+.........................................................
+Programm mit Rabatt:
+
+Console.WriteLine("Artikel:");
+string artikel = Console.ReadLine();
+
+Console.WriteLine("Einzelpreis:");
+double einzelpreis = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Menge:");
+int menge = int.Parse(Console.ReadLine());
+
+if (menge < 1)
+{
+Console.WriteLine("Fehler: Ungültige Menge!");
+return;
+}
+
+double gesamtpreis = einzelpreis * menge;
+double rabatt = 0;
+
+if (menge >= 5)
+{
+rabatt = 0.20;
+}
+else if (menge >= 3)
+{
+rabatt = 0.10;
+}
+else
+{
+rabatt = 0;
+}
+
+double rabattbetrag = gesamtpreis * rabatt;
+double endpreis = gesamtpreis - rabattbetrag;
+
+Console.WriteLine("Artikel: " + artikel);
+Console.WriteLine("Gesamtpreis: " + gesamtpreis.ToString("F2") + " CHF");
+Console.WriteLine("Rabatt: " + (rabatt * 100) + "%");
+Console.WriteLine("Rabattbetrag: " + rabattbetrag.ToString("F2") + " CHF");
+Console.WriteLine("Endpreis: " + endpreis.ToString("F2") + " CHF");
+
+...........................................................
+
+Grenzwerte Testen
+Der Einzelpreis beträgt 2.50 Fr.
+Menge    Rabatt          SOLL               Ist         Ergebniss
+___________________________________________________________________
+0        Fehler  |       -          |        -        |    OK
+___________________________________________________________________
+1          0%    |      2.50        |       2.50      |    OK
+___________________________________________________________________
+2          0%    |      5.00        |       5.00      |    OK
+___________________________________________________________________
+3          10%   |      6.75        |       6.75      |    OK
+___________________________________________________________________
+4          10%   |      9.00        |       9.00      |    OK
+___________________________________________________________________
+5          20%   |      10.00       |       10.00     |    OK
+___________________________________________________________________
+6          20%   |      12.00       |       12.00     |    OK
+
+
+
+
+
+Peer-Test
+Ein Mitschüler hat mein Programm mit den Mengen 0,3 und 5 getestet. Die Ergebnisse waren korrekt
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
